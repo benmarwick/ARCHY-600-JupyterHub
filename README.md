@@ -6,7 +6,7 @@ This repository contains a Dockerfile that UW-IT use to provide RStudio on Jupyt
 
 You can also click on this button to write code in your web browser (no log in required, file changes do not persist beyond the current session): [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/benmarwick/ARCHY-488-Lithic-Technology-Lab/master?urlpath=rstudio)
 
-You can also click on "Code", select the codespaces tab, and click "Create codespace on main", wait a few moments for the virtual machine to lauch a customized Visual Studio Code interface in your browser. Then click on the Ports tab (this may take another moment to appear after the instance opens), and clicking on the "globe" icon to open the link. This should open a new tab showing an RStudio login page. The default login user/password here is rstudio/rstudio. Once RStudio opens, consider using File -> New Project (cf. https://github.com/espm-157/reproducibility-template)
+You can also click on "Code", select the codespaces tab, and click "[Create codespace on main](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=614008148)", wait a few moments for the virtual machine to lauch a customized Visual Studio Code interface in your browser. Then click on the Ports tab (this may take another moment to appear after the instance opens), and clicking on the "globe" icon to open the link. This should open a new tab showing an RStudio login page. The default login user/password here is rstudio/rstudio. Once RStudio opens, consider using File -> New Project (cf. https://github.com/espm-157/reproducibility-template)
 
 
 
