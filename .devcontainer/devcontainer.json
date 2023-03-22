@@ -1,4 +1,5 @@
 {
+//  from https://github.com/espm-157/reproducibility-template/
 //  "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4",
   "name": "ARCHY-488-Lithic-Technology-Lab",
   "build": {
