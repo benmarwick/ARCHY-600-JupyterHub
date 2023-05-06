@@ -5,29 +5,38 @@ FROM us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:
 # install some R packages useful for lithic analysis
 # RUN sudo apt-get install libfontconfig1-dev -y
 RUN R -e "install.packages(c(
+                             # data manipulation
                              'broom', 
+                             # plotting
                              'cowplot', 
-                             'ggbeeswarm', 
+                             'ggbeeswarm',
+                             'GGally',
+                             'ggrepel',  
+                             # file handling
                              'here', 
                              'readxl',
-                             'ggrepel', 
+                             'rio',
+                             # shape
                              'geomorph', 
                              'Morpho', 
                              'Momocs', 
+                             # images
                              'EBImage',
                              'imager', 
+                             # multivariate
                              'tabula', 
                              'tesselle', 
                              'dimensio', 
-                             'rio', 
                              'FactoMineR', 
                              'factoextra', 
-                             'GGally', 
+                             # mapping and GIS
                              'rnaturalearth',
                              'rnaturalearthdata', 
                              'sf',
                              'rgeos',
                              'maps',
+                             'raster',
+                             'terra',
                              'measurements'
                               ), repos='https://cran.rstudio.com')"
 
