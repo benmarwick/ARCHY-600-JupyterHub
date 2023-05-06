@@ -27,7 +27,8 @@ RUN R -e "install.packages(c(
                              'rnaturalearth',
                              'rnaturalearthdata', 
                              'sf',
-                             'rgeos'
+                             'rgeos',
+                             'measurements'
                               ), repos='https://cran.rstudio.com')"
 
 # --- Metadata ---
