@@ -16,7 +16,6 @@ RUN R -e "install.packages(c(
                              'Momocs', 
                              'EBImage',
                              'imager', 
-                             'sf', 
                              'tabula', 
                              'tesselle', 
                              'dimensio', 
@@ -28,6 +27,7 @@ RUN R -e "install.packages(c(
                              'rnaturalearthdata', 
                              'sf',
                              'rgeos',
+                             'maps',
                              'measurements'
                               ), repos='https://cran.rstudio.com')"
 
