@@ -1,43 +1,43 @@
- 
 # pull base image from UW-IT here https://github.com/uw-it-aca/rttl-notebooks/tree/main/rstudio
 FROM us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.5
  
 # install some R packages useful for lithic analysis
 # RUN sudo apt-get install libfontconfig1-dev -y
-RUN R -e "install.packages(c(
-                             # data manipulation
-                             'broom', 
-                             # plotting
-                             'cowplot', 
-                             'ggbeeswarm',
-                             'GGally',
-                             'ggrepel',  
-                             # file handling
-                             'here', 
-                             'readxl',
-                             'rio',
-                             # shape
-                             'geomorph', 
-                             'Morpho', 
-                             'Momocs', 
-                             # images
-                             'EBImage',
-                             'imager', 
-                             # multivariate
-                             'tabula', 
-                             'tesselle', 
-                             'dimensio', 
-                             'FactoMineR', 
-                             'factoextra', 
-                             # mapping and GIS
-                             'rnaturalearth',
-                             'rnaturalearthdata', 
-                             'sf',
-                             'rgeos',
-                             'maps',
-                             'raster',
-                             'terra',
-                             'measurements'
+RUN R -e "install.packages(c(                    \
+                             # data manipulation \
+                             'broom',            \
+                             # plotting          \
+                             'cowplot',          \
+                             'ggbeeswarm',       \
+                             'GGally',           \
+                             'ggcorrplot',       \
+                             'ggrepel',          \
+                             # file handling     \
+                             'here',             \
+                             'readxl',           \
+                             'rio',              \
+                             # shape             \
+                             'geomorph',         \
+                             'Morpho',           \
+                             'Momocs',           \
+                             # images            \
+                             'EBImage',          \
+                             'imager',           \
+                             # multivariate      \
+                             'tabula',           \
+                             'tesselle',         \
+                             'dimensio',         \
+                             'FactoMineR',       \
+                             'factoextra',       \
+                             # mapping and GIS   \
+                             'rnaturalearth',    \
+                             'rnaturalearthdata',\
+                             'sf',               \
+                             'rgeos',            \
+                             'maps',             \
+                             'raster',           \
+                             'terra',            \
+                             'measurements'      \
                               ), repos='https://cran.rstudio.com')"
 
 # --- Metadata ---
