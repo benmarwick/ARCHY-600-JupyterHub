@@ -13,6 +13,7 @@ RUN R -e "install.packages(c(                    \
                              'ggcorrplot',       \
                              'ggrepel',          \
                              'plotrix',          \
+                             'see',              \
                              # file handling     \
                              'here',             \
                              'readxl',           \
@@ -30,6 +31,7 @@ RUN R -e "install.packages(c(                    \
                              'dimensio',         \
                              'FactoMineR',       \
                              'factoextra',       \
+                             'performance',      \
                              # mapping and GIS   \
                              'rnaturalearth',    \
                              'rnaturalearthdata',\
