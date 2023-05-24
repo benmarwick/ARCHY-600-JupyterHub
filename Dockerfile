@@ -40,7 +40,7 @@ RUN R -e "install.packages(c(                    \
                              'maps',             \
                              'raster',           \
                              'terra',            \
-                             'measurements'      \
+                             'measurements',     \
                              # misc              \
                              'Rmisc'             \
                               ), repos='https://cran.rstudio.com')"
