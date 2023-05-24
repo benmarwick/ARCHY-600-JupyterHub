@@ -12,6 +12,7 @@ RUN R -e "install.packages(c(                    \
                              'GGally',           \
                              'ggcorrplot',       \
                              'ggrepel',          \
+                             'plotrix',          \
                              # file handling     \
                              'here',             \
                              'readxl',           \
@@ -38,6 +39,8 @@ RUN R -e "install.packages(c(                    \
                              'raster',           \
                              'terra',            \
                              'measurements'      \
+                             # misc              \
+                             'Rmisc'             \
                               ), repos='https://cran.rstudio.com')"
 
 # --- Metadata ---
