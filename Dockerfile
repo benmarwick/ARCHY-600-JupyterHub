@@ -43,7 +43,9 @@ RUN R -e "install.packages(c(                    \
                              'measurements',     \
                              # misc              \
                              'Rmisc'             \
-                              ), repos='https://cran.rstudio.com')"
+                              ), repos='https://cran.rstudio.com'); \
+                              # github installations                \
+                              devtools::install_github('achetverikov/apastats', subdir = 'apastats')"
 
 # --- Metadata ---
 LABEL maintainer = "Ben Marwick <bmarwick@uw.edu>"  \
