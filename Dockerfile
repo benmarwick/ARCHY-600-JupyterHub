@@ -32,6 +32,7 @@ RUN R -e "install.packages(c(                    \
                              'FactoMineR',       \
                              'factoextra',       \
                              'performance',      \
+                             'FSA',              \
                              # mapping and GIS   \
                              'rnaturalearth',    \
                              'rnaturalearthdata',\
