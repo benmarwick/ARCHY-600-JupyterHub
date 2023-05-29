@@ -43,7 +43,7 @@ RUN R -e "install.packages(c(                    \
                              'terra',            \
                              'measurements',     \
                              # misc              \
-                             'Rmisc'             \
+                             'Rmisc',            \
                              'BiocManager'       \
                               ), repos='https://cran.rstudio.com'); \
                               # github installations                \
