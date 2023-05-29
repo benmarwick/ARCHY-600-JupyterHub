@@ -44,9 +44,14 @@ RUN R -e "install.packages(c(                    \
                              'measurements',     \
                              # misc              \
                              'Rmisc'             \
+                             'BiocManager'.      \
                               ), repos='https://cran.rstudio.com'); \
                               # github installations                \
-                              devtools::install_github('achetverikov/apastats', subdir = 'apastats')"
+                              devtools::install_github('achetverikov/apastats', subdir = 'apastats'); \
+                              # bioconductor installations          \
+                              BiocManager::install(c('ggtree',      \
+                                                     'ggtreeExtra', \
+                                                     'treeio')"
 
 # --- Metadata ---
 LABEL maintainer = "Ben Marwick <bmarwick@uw.edu>"  \
