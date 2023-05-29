@@ -43,15 +43,13 @@ RUN R -e "install.packages(c(                    \
                              'terra',            \
                              'measurements',     \
                              # misc              \
-                             'Rmisc',            \
-                             'BiocManager'       \
+                             'Rmisc'             \
                               ), repos='https://cran.rstudio.com'); \
                               # github installations                \
                               devtools::install_github('achetverikov/apastats', subdir = 'apastats'); \
-                              # bioconductor installations          \
-                              BiocManager::install(c('ggtree',      \
-                                                     'ggtreeExtra', \
-                                                     'treeio')"
+                              devtools::install_github(c('YuLab-SMU/ggtree',                          \
+                                                         'YuLab-SMU/ggtreeExtra',                     \
+                                                         'YuLab-SMU/treeio'))"
 
 # --- Metadata ---
 LABEL maintainer = "Ben Marwick <bmarwick@uw.edu>"  \
