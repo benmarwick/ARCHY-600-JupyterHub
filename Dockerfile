@@ -12,6 +12,7 @@ RUN R -e "install.packages(c(                    \
                              'GGally',           \
                              'ggcorrplot',       \
                              'ggrepel',          \
+                             'ggpmisc',          \
                              'plotrix',          \
                              'see',              \
                              # file handling     \
