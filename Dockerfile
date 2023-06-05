@@ -13,7 +13,11 @@ RUN R -e "install.packages(c(                    \
                              'ggcorrplot',       \
                              'ggrepel',          \
                              'ggpmisc',          \
+                             'ggtext',           \
+                             'ggridges',         \
                              'plotrix',          \
+                             'RColorBrewer',     \
+                             'viridis',          \
                              'see',              \
                              # file handling     \
                              'here',             \
@@ -26,7 +30,7 @@ RUN R -e "install.packages(c(                    \
                              # images            \
                              'EBImage',          \
                              'imager',           \
-                             # multivariate      \
+                             # stats             \
                              'tabula',           \
                              'tesselle',         \
                              'dimensio',         \
@@ -34,6 +38,7 @@ RUN R -e "install.packages(c(                    \
                              'factoextra',       \
                              'performance',      \
                              'FSA',              \
+                             'infer',            \
                              # mapping and GIS   \
                              'rnaturalearth',    \
                              'rnaturalearthdata',\
@@ -42,15 +47,19 @@ RUN R -e "install.packages(c(                    \
                              'maps',             \
                              'raster',           \
                              'terra',            \
+                             'spatstat',         \
+                             'maptools',         \
                              'measurements',     \
                              # misc              \
-                             'Rmisc'             \
+                             'Rmisc',             \
+                             'rcarbon'           \
                               ), repos='https://cran.rstudio.com'); \
                               # github installations                \
                               devtools::install_github('achetverikov/apastats', subdir = 'apastats'); \
                               devtools::install_github(c('YuLab-SMU/ggtree',                          \
                                                          'YuLab-SMU/ggtreeExtra',                     \
-                                                         'YuLab-SMU/treeio'))"
+                                                         'YuLab-SMU/treeio',                          \
+                                                         'ropensci/c14bazAAR'))"
 
 # --- Metadata ---
 LABEL maintainer = "Ben Marwick <bmarwick@uw.edu>"  \
