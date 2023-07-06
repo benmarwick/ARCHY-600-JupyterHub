@@ -1,6 +1,20 @@
 # pull base image from UW-IT here https://github.com/uw-it-aca/rttl-notebooks/tree/main/rstudio
 FROM us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.5
- 
+
+# install python packages
+RUN pip install \
+  folium \
+  geopandas \
+  pandas \
+  matplotlib \
+  seaborn \
+  ipyleaflet \
+  nbclassic \
+  nbgitpuller \  
+  requests-html && \
+  jupyter serverextension enable nbgitpuller --sys-prefix
+
+  
 # install some R packages useful for lithic analysis
 # RUN sudo apt-get install libfontconfig1-dev -y
 RUN R -e "install.packages(c(                    \
